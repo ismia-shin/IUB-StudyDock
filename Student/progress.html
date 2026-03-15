@@ -11,26 +11,84 @@
 <body>
 
 <header>
-    
-    <div id="logo">
-        <img src="/Asset/study_dock.png" height="40">
-        <a href="/Home/homepage.html"><h1>Study Dock</h1></a>
-    </div>
 
-    <nav>
-        <ul>
-            <li><a href="/Student/course_dashboard.html">Course Dashboard</a></li>
-            <li><a href="/Student/recommendation.html">Recommendation</a></li>
-            <li><a href="/Student/progress.html">Progess</a></li>
-            <li><a href="/Student/profile.html">Profile</a></li>
-        </ul>
-    </nav>
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="/Home/homepage.html">
+                <h1>Study Dock</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/Student/course_dashboard.html">Course Dashboard</a></li>
+                <li><a href="/Student/recommendation.html">Recommendation</a></li>
+                <li><a href="/Student/progress.html">Progess</a></li>
+                <li><a href="/Student/profile.html">Profile</a></li>
+            </ul>
+        </nav>
 </header>
 
 <main>
-    
+    <div class="search-container">
+        <input type="search" placeholder="Search for courses..." id="courseSearch">
+    </div>
 
+    <h2>Graded Assesment</h2>
+    <table class="course-table">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Assesment Name</th>
+                <th>
+                    Date 
+                    <button onclick="sortDate('asc')">↑</button> 
+                    <button onclick="sortDate('desc')">↓</button>
+                </th>
+                <th>Instructor</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CSE306</td>
+                <td>Rich Picture of Project</td>
+                <td>4/3/2026</td>
+                <td>Noureen Islam</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>CSE306</td>
+                <td>Front End of Project</td>
+                <td>17/3/2026</td>
+                <td>Noureen Islam</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>CSE216</td>
+                <td>Component List</td>
+                <td>7/2/2026</td>
+                <td>Noor-E Sadman</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>CSE216</td>
+                <td>System Architechture and Circuit Diagram</td>
+                <td>23/2/2026</td>
+                <td>Noor-E Sadman</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>CSE216</td>
+                <td>Block Diagram and Product Comparison table</td>
+                <td>--</td>
+                <td>Noor-E Sadman</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <script src="progress.js"></script>
 </main>
 
 </body>
