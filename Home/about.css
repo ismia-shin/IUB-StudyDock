@@ -56,13 +56,14 @@ nav a:hover {
 }
 
 .project-header h2 {
-    border-left: 5px solid #ff00c8;
-    border-right: 5px solid #ff00c8;
+    border-left: 5px solid #00b7ff;
+    border-right: 5px solid #00b7ff;
     padding-right: 15px;
     padding-left: 15px;
     display: inline-block;
     text-align: left;
     margin-bottom: 20px;
+    color: #000000;
 }
 
 .project-header p {
@@ -85,7 +86,7 @@ nav a:hover {
 }
 
 .member-card {
-    background: #00f7ff;
+    background: #f7951ec8;
     border: 1px solid #000000;
     padding: 20px;
     border-radius: 8px;
