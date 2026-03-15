@@ -11,26 +11,88 @@
 <body>
 
 <header>
-    
-    <div id="logo">
-        <img src="/Asset/study_dock.png" height="40">
-        <a href="/Home/homepage.html"><h1>Study Dock</h1></a>
-    </div>
 
-    <nav>
-        <ul>
-            <li><a href="/Student/course_dashboard.html">Course Dashboard</a></li>
-            <li><a href="/Student/recommendation.html">Recommendation</a></li>
-            <li><a href="/Student/progress.html">Progess</a></li>
-            <li><a href="/Student/profile.html">Profile</a></li>
-        </ul>
-    </nav>
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="/Home/homepage.html">
+                <h1>Study Dock</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/Student/course_dashboard.html">Course Dashboard</a></li>
+                <li><a href="/Student/recommendation.html">Recommendation</a></li>
+                <li><a href="/Student/progress.html">Progess</a></li>
+                <li><a href="/Student/profile.html">Profile</a></li>
+            </ul>
+        </nav>
 </header>
 
 <main>
-    
+    <div class="search-container">
+        <input type="search" placeholder="Search for courses..." id="courseSearch">
+    </div>
 
+    <h2>Enrolled Courses</h2>
+    <table class="course-table">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Credit</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CSE306</td>
+                <td>Database Management System</td>
+                <td>Noureen Islam</td>
+                <td>3</td>
+                <td><a href="#" class="action-link">View</a></td>
+            </tr>
+            <tr>
+                <td>CSE216</td>
+                <td>Microprocessor, Interfacing and Assembly Language</td>
+                <td>Noor-E Sadman</td>
+                <td>3</td>
+                <td><a href="#" class="action-link">View</a></td>
+            </tr>
+        </tbody>
+    </table>
 
+    <h2>Market Place</h2>
+    <table class="course-table">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Credit</th>
+                <th>Enroll</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CSE306</td>
+                <td>Database Management System</td>
+                <td>Noureen Islam</td>
+                <td>3</td>
+                <td><button class="enroll-btn">Enroll</button></td>
+            </tr>
+            <tr>
+                <td>CSE216</td>
+                <td>Microprocessor, Interfacing and Assembly Language</td>
+                <td>Noor-E Sadman</td>
+                <td>3</td>
+                <td><button class="enroll-btn">Enroll</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="course_dashboard.js"></script>
 </main>
 
 </body>
