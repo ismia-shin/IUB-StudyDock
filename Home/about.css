@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; 
+    background: #dcdcdc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+div a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff00c8;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.project-header h2 {
+    border-left: 5px solid #ff00c8;
+    border-right: 5px solid #ff00c8;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.project-header p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.divider {
+    margin: 40px auto;
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.member-card {
+    background: #00f7ff;
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 8px;
+    width: 180px;
+}
+
+.member-card h3 {
+    font-size: 1rem;
+    margin: 10px 0 5px 0;
+}
+
+.member-card p {
+    font-size: 0.85rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.member-links a {
+    font-size: 0.8rem;
+    color: #4000ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.member-links a:hover {
+    color: #ff00f7;
+}
+
+.disclaimer {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #999;
+}

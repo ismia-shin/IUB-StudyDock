@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; 
+    background: #dcdcdc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+div a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff00c8;
+}
+
+.hero {
+    background: linear-gradient(#14abd0 0%, #2596d4 25%, #3c79d9 50%, #4e63dd 75%, #6448e2 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.main-logo {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.cta-btn {
+    background-color: #00ffee; 
+    color: rgb(0, 0, 0);
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #0278fffe;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 40px;
+    flex-wrap: wrap;
+    background-color: #9beeff89;
+}
+
+.feature-card {
+    background: rgba(255, 172, 83, 0.748);
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    border-top: 5px solid #e5ff00; 
+    transition: border-color 0.3s;
+}
+
+.feature-card:hover {
+    border-top-color: #00ff77;
+}
+
+.feature-card h3 {
+    color: #000000;
+    margin-bottom: 15px;
+}
