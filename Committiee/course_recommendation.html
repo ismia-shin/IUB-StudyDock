@@ -38,22 +38,22 @@
         <div >
             <label for="major-container">Major:</label>
             <select name="major" id="major">
+                <option value="all">All Majors</option>
                 <option value="csc">Computer Science</option>
                 <option value="bme">Biomedical Engineering</option>
                 <option value="eee">Electrical and Electronics Engineering</option>
                 <option value="cse">Computer Science and Engineering</option>
-                <option value="all">All Majors</option>
             </select>
         </div>
 
         <div id="year-conainer">
             <label for="year-choice">Year:</label>
             <select name="year" id="year">
+                <option value="all">All year</option>
                 <option value="1">First year</option>
                 <option value="2">Seccond year</option>
                 <option value="3">Third year</option>
                 <option value="3">Fourth year</option>
-                <option value="all">All year</option>
             </select>
         </div>
 
@@ -72,8 +72,8 @@
                 <th>Studen Name</th>
                 <th>
                     Credit completed
-                    <button onclick="sortDate('asc')">↑</button>
-                    <button onclick="sortDate('desc')">↓</button>
+                    <button onclick="sort('asc')">↑</button>
+                    <button onclick="sort('desc')">↓</button>
                 </th>
                 <th>Major</th>
                 <th>Taken Course</th>
@@ -146,6 +146,7 @@
         <div>
             <label>Course 1: </label>
             <select name="courses" id="course1">
+                <option value="Select">Select</option>
                 <option value="csc101">CSC101</option>
                 <option value="bme101">BME101</option>
                 <option value="eee101">EEE101</option>
@@ -156,6 +157,7 @@
         <div>
             <label>Course 2: </label>
             <select name="courses" id="course2">
+                <option value="Select">Select</option>
                 <option value="csc101">CSC101</option>
                 <option value="bme101">BME101</option>
                 <option value="eee101">EEE101</option>
@@ -166,6 +168,7 @@
         <div>
             <label>Course 3: </label>
             <select name="courses" id="course3">
+                <option value="Select">Select</option>
                 <option value="csc101">CSC101</option>
                 <option value="bme101">BME101</option>
                 <option value="eee101">EEE101</option>
