@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="course_recommendation.css">
+    <link rel="icon" type="image/png" href="/Asset/study_dock.png">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="/Home/homepage.html">
+                <h1>Study Dock</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/Committiee/course_recommendation.html">Recommend Course</a></li>
+                <li><a href="/Committiee/content_approval.html">Approve Content</a></li>
+                <li><a href="/Committiee/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+
+    <div class="filter-container">  
+        <div class="search-container">
+            <input type="search" placeholder="Search..." id="courseSearch">
+        </div>
+
+        <div >
+            <label for="major-container">Major:</label>
+            <select name="major" id="major">
+                <option value="csc">Computer Science</option>
+                <option value="bme">Biomedical Engineering</option>
+                <option value="eee">Electrical and Electronics Engineering</option>
+                <option value="cse">Computer Science and Engineering</option>
+                <option value="all">All Majors</option>
+            </select>
+        </div>
+
+        <div id="year-conainer">
+            <label for="year-choice">Year:</label>
+            <select name="year" id="year">
+                <option value="1">First year</option>
+                <option value="2">Seccond year</option>
+                <option value="3">Third year</option>
+                <option value="3">Fourth year</option>
+                <option value="all">All year</option>
+            </select>
+        </div>
+
+        <div id="credit_completed_search_container">
+            <input type="search" name="credit_completed" id="credit_compleed"  placeholder="Credit Completed...">
+        </div>
+    </div>  
+
+
+    <h2>Student List</h2>
+    <table class="student-table">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Student Id</th>
+                <th>Studen Name</th>
+                <th>
+                    Credit completed
+                    <button onclick="sortDate('asc')">↑</button>
+                    <button onclick="sortDate('desc')">↓</button>
+                </th>
+                <th>Major</th>
+                <th>Taken Course</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" name="select" id="select">
+                </td>
+                <td>2311993</td>
+                <td>Samiha Islam</td>
+                <td>60</td>
+                <td value="csc">CSC</td>
+                <td>CSC216, CSC303, CSC403</td>
+                <td>Third Year</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="select" id="select">
+                </td>
+                <td>2210766</td>
+                <td>Mobasshira Akter</td>
+                <td>90</td>
+                <td value="bme">BME</td>
+                <td>BME216, CSC303, BME403</td>
+                <td>First Year</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="select" id="select">
+                </td>
+                <td>2220907</td>
+                <td>Sumaya Akter Sadia</td>
+                <td>80</td>
+                <td value="cse">CSE</td>
+                <td>CSC456, CSC101, CSC224</td>
+                <td>Fourth Year</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="select" id="select">
+                </td>
+                <td>2211583</td>
+                <td>Sajida Fairooz</td>
+                <td>50</td>
+                <td value="eee">EEE</td>
+                <td>CSC216, CSE303, EEE403</td>
+                <td>Third Year</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="select" id="select">
+                </td>
+                <td>2220107</td>
+                <td>Ripa Sarkar</td>
+                <td>75</td>
+                <td value="csc">CSC</td>
+                <td>ME501, CSC101, EEE403</td>
+                <td>Seccond Year</td>
+            </tr>
+        </tbody>
+    </table>
+
+<div id="recommendation-container">
+    <h2>Choose Courses:</h2>
+
+    <div class="recommend-actions">
+        <div>
+            <label>Course 1: </label>
+            <select name="courses" id="course1">
+                <option value="csc101">CSC101</option>
+                <option value="bme101">BME101</option>
+                <option value="eee101">EEE101</option>
+                <option value="cse101">CSE101</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Course 2: </label>
+            <select name="courses" id="course2">
+                <option value="csc101">CSC101</option>
+                <option value="bme101">BME101</option>
+                <option value="eee101">EEE101</option>
+                <option value="cse101">CSE101</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Course 3: </label>
+            <select name="courses" id="course3">
+                <option value="csc101">CSC101</option>
+                <option value="bme101">BME101</option>
+                <option value="eee101">EEE101</option>
+                <option value="cse101">CSE101</option>
+            </select>
+        </div>
+
+        <button type="button" id="sendBtn">
+            <img src="/Asset/send.png" alt="Send">
+        </button>
+    </div>
+</div>
+
+    <script src="course_recommendation.js"></script>
+
+</main>
+
+
+</body>
+
+</html>
