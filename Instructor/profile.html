@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/png" href="/Asset/study_dock.png">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="/Home/homepage.html">
+                <h1>Study Dock</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/Instructor/course_dashboard.html">Course Dashboard</a></li>
+                <li><a href="/Instructor/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="profile-header">
+        <img src="/Asset/Profile.jpg" alt="Profile Pic" class="main-profile-pic">
+        <h1 id="name">Noureen Islam</h1>
+    </div>
+
+    <div class="profile-card">
+        <div class="profile-row">
+            <span class="label">First Name:</span>
+            <span class="value" id="first_name">Noureen</span>
+            <button class="edit-btn" id="first_name_btn"><img src="/Asset/edit.png" alt="Edit"></button>
+        </div>
+
+        <div class="profile-row">
+            <span class="label">Last Name:</span>
+            <span class="value" id="last_name">Islam</span>
+            <button class="edit-btn" id="last_name_btn"><img src="/Asset/edit.png" alt="Edit"></button>
+        </div>
+
+        <div class="profile-row">
+            <span class="label">Date of Birth:</span>
+            <span class="value">30/12/2006</span>
+            </div>
+
+        <div class="profile-row">
+            <span class="label">Expertise</span>
+            <span class="value" id="address">Data Structure, Database and Algorithm, IOT based applications</span>
+            <button class="edit-btn" id="address_btn"><img src="/Asset/edit.png" alt="Edit"></button>
+        </div>
+
+        <div class="profile-row">
+            <span class="label">Department:</span>
+            <span class="value">Computer Science and Engineering</span>
+        </div>
+    </div>
+</main>
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>

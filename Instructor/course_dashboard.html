@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="course_dashboard.css">
+    <link rel="icon" type="image/png" href="/Asset/study_dock.png">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="/Home/homepage.html">
+                <h1>Study Dock</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/Instructor/course_dashboard.html">Course Dashboard</a></li>
+                <li><a href="/Instructor/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+        
+    <div class="search-container">
+        <input type="search" placeholder="Search for courses..." id="courseSearch">
+    </div>
+
+    <h2>Your Courses</h2>
+    <button id="addNewBtn">Add new</button>
+    <table class="course-table">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Credit</th>
+                <th>Link</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CSE306</td>
+                <td>Database Management System</td>
+                <td>Noureen Islam</td>
+                <td>3</td>
+                <td><a href="#" class="action-link">View</a></td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="course_dashboard.js"></script>
+
+</main>
+
+
+</body>
+
+</html>
