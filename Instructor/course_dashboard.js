@@ -26,17 +26,21 @@ document.getElementById('addNewBtn').onclick = function() {
     if (id && name) {
         const table = document.querySelector(".course-table tbody");
         const newRow = `
-            <tr>
-                <td>${id}</td>
-                <td>${name}</td>
-                <td>${instructor}</td>
-                <td>${credit}</td>
-                <td><a class="action-link">View</a></td>
-                <td>
-                    <button onclick="deleteRow(this)">Delete</button>
-                    <button onclick="editRow(this)">Edit</button>
-                </td>
-            </tr>`;
+        <tr>
+            <td>${id}</td>
+            <td>${name}</td>
+            <td>${instructor}</td>
+            <td>${credit}</td>
+            <td>
+                <a href="#" class="action-link">Content</a> | 
+                <a href="#" class="action-link">Assessment</a> | 
+                <a href="#" class="action-link">Student</a>
+            </td>
+            <td>
+                <button onclick="deleteRow(this)">Delete</button>
+                <button onclick="editRow(this)">Edit</button>
+            </td>
+        </tr>`;
         table.innerHTML += newRow;
     }
 };
