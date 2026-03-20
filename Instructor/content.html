@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Study Dock</title>
-    <link rel="stylesheet" href="course_dashboard.css">
+    <link rel="stylesheet" href="content.css">
     <link rel="icon" type="image/png" href="/Asset/study_dock.png">
 </head>
 
@@ -30,32 +30,44 @@
 <main>
         
     <div class="search-container">
-        <input type="search" placeholder="Search for courses..." id="courseSearch">
+        <input type="search" placeholder="Search for Content..." id="contentSearch">
     </div>
 
-    <h2>Your Courses</h2>
+    <h2>CSE306 : Database Management System</h2>
     <button id="addNewBtn">Add new</button>
-    <table class="course-table">
+    <table class="content-table">
         <thead>
             <tr>
-                <th>Course ID</th>
-                <th>Course Name</th>
-                <th>Instructor</th>
-                <th>Credit</th>
-                <th>Link</th>
+                <th>Name</th>
+                <th>Content Type</th>
+                <th>Date uploaded</th>
+                <th>Feedback</th>
+                <th>URL</th>
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>CSE306</td>
-                <td>Database Management System</td>
-                <td>Noureen Islam</td>
-                <td>3</td>
+                <td>Creating Rich Picture</td>
+                <td>Video</td>
+                <td>20 February 2026</td>
+                <td><p>--</p></td>
                 <td>
-                    <a href="content.html" class="action-link">Content</a> |
-                    <a href="#" class="action-link">Assesment</a> |
-                    <a href="#" class="action-link">Student</a>
+                    <a href="#" class="action-link">Link</a>
+                </td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>HTML and CSS</td>
+                <td>PDF</td>
+                <td>22 February 2026</td>
+                <td><p>--</p></td>
+                <td>
+                    <a href="#" class="action-link">Link</a>
+                </td>
                 <td>
                     <button onclick="deleteRow(this)">Delete</button>
                     <button onclick="editRow(this)">Edit</button>
@@ -64,7 +76,7 @@
         </tbody>
     </table>
 
-    <script src="course_dashboard.js"></script>
+    <script src="content.js"></script>
 
 </main>
 
