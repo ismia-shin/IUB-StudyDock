@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="assesment.css">
+    <link rel="icon" type="image/png" href="/Asset/study_dock.png">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img src="/Asset/study_dock.png" height="40">
+            <a href="/Home/homepage.html">
+                <h1>Study Dock</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/Instructor/course_dashboard.html">Course Dashboard</a></li>
+                <li><a href="/Instructor/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+        
+    <div class="search-container">
+        <input type="search" placeholder="Search for Assesment..." id="assesmentSearch">
+    </div>
+
+    <h2>CSE306 : Database Management System</h2>
+    <button id="addNewBtn">Add new</button>
+    <table class="assesment-table">
+        <thead>
+            <tr>
+                <th>Assesment Name</th>
+                <th>Description</th>
+                <th>Due Date</th>
+                <th>Date Posted</th>
+                <th>Posted Material</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Creating Rich Picture</td>
+                <td>Create a Rich Picture of your desgintated group Project</td>
+                <td>2 February 2026</td>
+                <td>20 January 2026</td>
+                <td>
+                    <a href="#" class="action-link">Link</a>
+                </td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Front End</td>
+                <td>Create Front End of your designated group Project</td>
+                <td>22 February 2026</td>
+                <td>28 February 2026</td>
+                <td>
+                    <a href="#" class="action-link">Link</a>
+                </td>
+                <td>
+                    <button onclick="deleteRow(this)">Delete</button>
+                    <button onclick="editRow(this)">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="assesment.js"></script>
+
+</main>
+
+
+</body>
+
+</html>
