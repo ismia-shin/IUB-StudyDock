@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../Asset/study_dock.png">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img src="../Asset/study_dock.png" height="40">
+            <a href="../Home/homepage.html">
+                <h1>Study Dock</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../Admin/manage_profile.html">Manage Profile</a></li>
+                <li><a href="../Admin/course.html">Course Dashboard</a></li>
+                <li><a href="../Admin/content.html">Manage Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <div class="search-container">
+        <input type="search" placeholder="Search for content..." id="search">
+        </div>
+
+        <h2>Student Profile</h2>
+
+        <button id="addNewContentBtn">Add new</button>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Content Name</th>
+                    <th>Content Type</th>
+                    <th>Date Uploaded</th>
+                    <th>URL</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CSE306</td>
+                    <td>Creating Rich Picture</td>
+                    <td>Video</td>
+                    <td>20 February 2026</td>
+                    <td>
+                        <a href="#" class="action-link">Link</a>
+                    </td>
+                    <td>
+                        <button onclick="deleteRow(this)">Delete</button>
+                        <button onclick="editcontentRow(this)">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CSE306</td>
+                    <td>HTML and CSS</td>
+                    <td>PDF</td>
+                    <td>22 February 2026</td>
+                    <td>
+                        <a href="#" class="action-link">Link</a>
+                    </td>
+                    <td>
+                        <button onclick="deleteRow(this)">Delete</button>
+                        <button onclick="editcontentRow(this)">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

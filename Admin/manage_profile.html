@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../Asset/study_dock.png">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="logo">
+            <img src="../Asset/study_dock.png" height="40">
+            <a href="../Home/homepage.html">
+                <h1>Study Dock</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../Admin/manage_profile.html">Manage Profile</a></li>
+                <li><a href="../Admin/course.html">Course Dashboard</a></li>
+                <li><a href="../Admin/content.html">Manage Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <div class="search-container">
+        <input type="search" placeholder="Search for Students..." id="search">
+        </div>
+
+        <h2>Student Profile</h2>
+
+        <button id="addNewProfileBtn">Add new</button>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>StudentID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Adress</th>
+                    <th>Major</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>234589</td>
+                    <td>Sami</td>
+                    <td>Islam</td>
+                    <td>19/08/2004</td>
+                    <td>EEE</td>
+                    <td>Jalalpur</td>
+                    <td>
+                        <button onclick="deleteRow(this)">Delete</button>
+                        <button onclick="editProfileRow(this)">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>267879</td>
+                    <td>Sanjida</td>
+                    <td>Kalam</td>
+                    <td>19/08/2004</td>
+                    <td>CSE</td>
+                    <td>Chadpur</td>
+                    <td>
+                        <button onclick="deleteRow(this)">Delete</button>
+                        <button onclick="editProfileRow(this)">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>345324</td>
+                    <td>Adilu</td>
+                    <td>Hasan</td>
+                    <td>12/08/2004</td>
+                    <td>BME</td>
+                    <td>Kasimpur</td>
+                    <td>
+                        <button onclick="deleteRow(this)">Delete</button>
+                        <button onclick="editProfileRow(this)">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
