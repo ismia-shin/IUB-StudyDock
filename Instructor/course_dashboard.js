@@ -33,8 +33,9 @@ document.getElementById('addNewBtn').onclick = function() {
             <td>${credit}</td>
             <td>
                 <a href="#" class="action-link">Content</a> | 
-                <a href="#" class="action-link">Assessment</a> | 
-                <a href="#" class="action-link">Student</a>
+                <a href="#" class="action-link">Assessment</a> <br>
+                <a href="#" class="action-link">Student</a> | 
+                <a href="#" class="action-link">Grade</a> 
             </td>
             <td>
                 <button onclick="deleteRow(this)">Delete</button>
