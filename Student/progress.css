@@ -124,3 +124,10 @@ h2 {
 .course-table tr:hover {
     background-color: #fff9fe; 
 }
+
+canvas {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
